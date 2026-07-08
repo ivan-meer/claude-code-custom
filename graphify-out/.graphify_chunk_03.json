@@ -1,0 +1,106 @@
+{
+  "nodes": [
+    {
+      "id": "root_claude_code_custom_icon_png",
+      "type": "file",
+      "label": "icon.png",
+      "properties": {
+        "path": "D:\\.AGENTOS\\claude-code-custom\\icon.png",
+        "format": "PNG image",
+        "description": "Project branding icon for claude-code-custom",
+        "content_type": "image/png",
+        "chunk": "03",
+        "chunk_index": 0
+      },
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "root_claude_code_custom_icon_png_logo",
+      "type": "asset",
+      "label": "project_logo",
+      "properties": {
+        "asset_type": "branding_logo",
+        "visual_category": "abstract_geometric_logo",
+        "theme": "artificial_intelligence",
+        "purpose": "project_identity"
+      },
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "id": "root_claude_code_custom_icon_png_project",
+      "type": "concept",
+      "label": "claude_code_custom_project",
+      "properties": {
+        "concept_type": "software_project",
+        "context": "AI-assisted development environment",
+        "platform": "Claude Code"
+      },
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "root_claude_code_custom_icon_png_branding",
+      "type": "concept",
+      "label": "project_branding",
+      "properties": {
+        "concept_type": "visual_identity",
+        "includes": ["logo", "icon", "visual_identity"]
+      },
+      "confidence": "INFERRED",
+      "confidence_score": 0.75
+    }
+  ],
+  "edges": [
+    {
+      "source": "root_claude_code_custom_icon_png",
+      "target": "root_claude_code_custom_icon_png_logo",
+      "type": "depicts",
+      "properties": {
+        "relationship": "file_contains_logo"
+      },
+      "confidence": "INFERRED",
+      "confidence_score": 0.85
+    },
+    {
+      "source": "root_claude_code_custom_icon_png",
+      "target": "root_claude_code_custom_icon_png_project",
+      "type": "belongs_to",
+      "properties": {
+        "relationship": "file_part_of_project"
+      },
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "source": "root_claude_code_custom_icon_png_logo",
+      "target": "root_claude_code_custom_icon_png_branding",
+      "type": "expresses",
+      "properties": {
+        "relationship": "logo_represents_brand"
+      },
+      "confidence": "INFERRED",
+      "confidence_score": 0.75
+    },
+    {
+      "source": "root_claude_code_custom_icon_png_project",
+      "target": "root_claude_code_custom_icon_png_branding",
+      "type": "has",
+      "properties": {
+        "relationship": "project_has_branding"
+      },
+      "confidence": "INFERRED",
+      "confidence_score": 0.8
+    }
+  ],
+  "hyperedges": [],
+  "metadata": {
+    "chunk": "03",
+    "total_chunks": 3,
+    "file": "icon.png",
+    "extraction_timestamp": "2026-07-09T00:00:00Z",
+    "extraction_strategy": "vision_analysis",
+    "schema_version": "1.0"
+  }
+}

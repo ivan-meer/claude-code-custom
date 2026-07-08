@@ -1,0 +1,944 @@
+{
+  "nodes": [
+    {
+      "id": "bash_update_agent_context",
+      "label": "update-agent-context.sh",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/bash/update-agent-context.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "d_agentos_claude_code_custom_specify_extensions_agent_context_scripts_bash_update_agent_context_sh__entry",
+      "label": "update-agent-context.sh script",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/bash/update-agent-context.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_update_agent_context",
+      "label": "update-agent-context.ps1",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_update_agent_context_get_configvalue",
+      "label": "Get-ConfigValue()",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_update_agent_context_test_configobject",
+      "label": "Test-ConfigObject()",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_update_agent_context_resolve_contextpath",
+      "label": "Resolve-ContextPath()",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_update_agent_context_test_issubpath",
+      "label": "Test-IsSubPath()",
+      "file_type": "code",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L95",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_check_prerequisites",
+      "label": "check-prerequisites.ps1",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/check-prerequisites.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common",
+      "label": "common.ps1",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_find_specifyroot",
+      "label": "Find-SpecifyRoot()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_resolve_specifyinitdir",
+      "label": "Resolve-SpecifyInitDir()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_get_reporoot",
+      "label": "Get-RepoRoot()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_get_currentbranch",
+      "label": "Get-CurrentBranch()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_save_featurejson",
+      "label": "Save-FeatureJson()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_get_featurepathsenv",
+      "label": "Get-FeaturePathsEnv()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L145",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_test_fileexists",
+      "label": "Test-FileExists()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L199",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_test_dirhasfiles",
+      "label": "Test-DirHasFiles()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L210",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_get_invokeseparator",
+      "label": "Get-InvokeSeparator()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L221",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_format_speckitcommand",
+      "label": "Format-SpecKitCommand()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L255",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_get_python3command",
+      "label": "Get-Python3Command()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L275",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_resolve_template",
+      "label": "Resolve-Template()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L293",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_common_resolve_templatecontent",
+      "label": "Resolve-TemplateContent()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L359",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_create_new_feature",
+      "label": "create-new-feature.ps1",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_create_new_feature_get_highestnumberfromspecs",
+      "label": "Get-HighestNumberFromSpecs()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_create_new_feature_convertto_cleanbranchname",
+      "label": "ConvertTo-CleanBranchName()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L70",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_create_new_feature_get_branchname",
+      "label": "Get-BranchName()",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_setup_plan",
+      "label": "setup-plan.ps1",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/setup-plan.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "powershell_setup_tasks",
+      "label": "setup-tasks.ps1",
+      "file_type": "code",
+      "source_file": ".specify/scripts/powershell/setup-tasks.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env",
+      "label": "claude_code_zai_env.sh",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "d_agentos_claude_code_custom_src_scripts_claude_code_zai_env_sh__entry",
+      "label": "claude_code_zai_env.sh script",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_log_info",
+      "label": "log_info()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L23",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_log_success",
+      "label": "log_success()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L27",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_log_error",
+      "label": "log_error()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L31",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_ensure_dir_exists",
+      "label": "ensure_dir_exists()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L35",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_install_nodejs",
+      "label": "install_nodejs()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L49",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_check_nodejs",
+      "label": "check_nodejs()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L87",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_install_claude_code",
+      "label": "install_claude_code()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L109",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_configure_claude_json",
+      "label": "configure_claude_json()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L122",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_configure_claude",
+      "label": "configure_claude()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L142",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_claude_code_zai_env_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L190",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "bash_update_agent_context",
+      "target": "d_agentos_claude_code_custom_specify_extensions_agent_context_scripts_bash_update_agent_context_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/extensions/agent-context/scripts/bash/update-agent-context.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_update_agent_context",
+      "target": "powershell_update_agent_context_get_configvalue",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_update_agent_context",
+      "target": "powershell_update_agent_context_test_configobject",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_update_agent_context",
+      "target": "powershell_update_agent_context_resolve_contextpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_update_agent_context",
+      "target": "powershell_update_agent_context_test_issubpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_find_specifyroot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_resolve_specifyinitdir",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_get_reporoot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_get_currentbranch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_save_featurejson",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_get_featurepathsenv",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_test_fileexists",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_test_dirhasfiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L210",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_get_invokeseparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L221",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_format_speckitcommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L255",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_get_python3command",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L275",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_resolve_template",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L293",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common",
+      "target": "powershell_common_resolve_templatecontent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L359",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_get_reporoot",
+      "target": "powershell_common_resolve_specifyinitdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_get_reporoot",
+      "target": "powershell_common_find_specifyroot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_get_featurepathsenv",
+      "target": "powershell_common_get_reporoot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L146",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_get_featurepathsenv",
+      "target": "powershell_common_get_currentbranch",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_get_featurepathsenv",
+      "target": "powershell_common_save_featurejson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_format_speckitcommand",
+      "target": "powershell_common_get_invokeseparator",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_common_resolve_templatecontent",
+      "target": "powershell_common_get_python3command",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/common.ps1",
+      "source_location": "L399",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_create_new_feature",
+      "target": "powershell_create_new_feature_get_highestnumberfromspecs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_create_new_feature",
+      "target": "powershell_create_new_feature_convertto_cleanbranchname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_create_new_feature",
+      "target": "powershell_create_new_feature_get_branchname",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "powershell_create_new_feature_get_branchname",
+      "target": "powershell_create_new_feature_convertto_cleanbranchname",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".specify/scripts/powershell/create-new-feature.ps1",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "d_agentos_claude_code_custom_src_scripts_claude_code_zai_env_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_log_info",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_log_error",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_ensure_dir_exists",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_install_nodejs",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_check_nodejs",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_install_claude_code",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_configure_claude_json",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_configure_claude",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_claude_code_zai_env",
+      "target": "scripts_claude_code_zai_env_main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L190",
+      "weight": 1.0
+    },
+    {
+      "source": "d_agentos_claude_code_custom_src_scripts_claude_code_zai_env_sh__entry",
+      "target": "scripts_claude_code_zai_env_main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L205",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_ensure_dir_exists",
+      "target": "scripts_claude_code_zai_env_log_error",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_nodejs",
+      "target": "scripts_claude_code_zai_env_log_info",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L54",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_nodejs",
+      "target": "scripts_claude_code_zai_env_log_error",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L70",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_nodejs",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_check_nodejs",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L93",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_check_nodejs",
+      "target": "scripts_claude_code_zai_env_log_info",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L96",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_check_nodejs",
+      "target": "scripts_claude_code_zai_env_install_nodejs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_claude_code",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L111",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_claude_code",
+      "target": "scripts_claude_code_zai_env_log_info",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L113",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_install_claude_code",
+      "target": "scripts_claude_code_zai_env_log_error",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L115",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_configure_claude",
+      "target": "scripts_claude_code_zai_env_log_info",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L143",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_configure_claude",
+      "target": "scripts_claude_code_zai_env_log_error",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L149",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_configure_claude",
+      "target": "scripts_claude_code_zai_env_ensure_dir_exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L153",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_configure_claude",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L183",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_main",
+      "target": "scripts_claude_code_zai_env_check_nodejs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L193",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_main",
+      "target": "scripts_claude_code_zai_env_install_claude_code",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L194",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_main",
+      "target": "scripts_claude_code_zai_env_configure_claude_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L195",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_main",
+      "target": "scripts_claude_code_zai_env_configure_claude",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L196",
+      "weight": 1.0,
+      "context": "call"
+    },
+    {
+      "source": "scripts_claude_code_zai_env_main",
+      "target": "scripts_claude_code_zai_env_log_success",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": ".src/scripts/claude_code_zai_env.sh",
+      "source_location": "L199",
+      "weight": 1.0,
+      "context": "call"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
