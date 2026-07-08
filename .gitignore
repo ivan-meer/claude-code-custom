@@ -1,0 +1,10 @@
+node_modules/
+.vibechat.json
+*.log
+.DS_Store
+Thumbs.db
+
+# Project-specific
+graphify-out/cache/
+.specify/feature.json
+.claude/settings.local.json

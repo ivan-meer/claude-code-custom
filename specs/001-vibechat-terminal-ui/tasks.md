@@ -25,9 +25,9 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize npm project in `package.json` with ws + ansi-escapes dependencies
-- [ ] T002 [P] Create source directories: `hook-scripts/`, `server/`, `ui/`, `config/`, `tests/`
-- [ ] T003 [P] Create `.gitignore` excluding `node_modules/`, `*.log`, `~/.vibechat.json`
+- [x] T001 Initialize npm project in `package.json` with ws + ansi-escapes dependencies
+- [x] T002 [P] Create source directories: `hook-scripts/`, `server/`, `ui/`, `config/`, `tests/`
+- [x] T003 [P] Create `.gitignore` excluding `node_modules/`, `*.log`, `~/.vibechat.json`
 
 ---
 
@@ -35,9 +35,9 @@
 
 **⚠️ CRITICAL**: Must complete before ANY user story work begins
 
-- [ ] T004 [P] Implement WebSocket server entry point in `server/index.js` — HTTP server on `127.0.0.1:2209`, WebSocket upgrade handler, POST `/event` endpoint for hooks, GET `/health` endpoint
-- [ ] T005 [P] Implement config loader in `config/index.js` — reads `~/.vibechat.json` (default if missing), validates filter keys against known EventType list
-- [ ] T006 Implement session state tracker in `server/session-state.js` — state machine (idle → thinking → executing → waiting_permission), exposes `getState()`, `updateState(event)` methods, emits state change events
+- [x] T004 [P] Implement WebSocket server entry point in `server/index.js` — HTTP server on `127.0.0.1:2209`, WebSocket upgrade handler, POST `/event` endpoint for hooks, GET `/health` endpoint
+- [x] T005 [P] Implement config loader in `config/index.js` — reads `~/.vibechat.json` (default if missing), validates filter keys against known EventType list
+- [x] T006 Implement session state tracker in `server/session-state.js` — state machine (idle → thinking → executing → waiting_permission), exposes `getState()`, `updateState(event)` methods, emits state change events
 
 **Checkpoint**: Server starts, accepts WS connections, responds to GET /health. Config loads without errors.
 
@@ -51,22 +51,22 @@
 
 ### Hook Scripts (Event Producers)
 
-- [ ] T007 [P] [MX] Create `notification.sh` — reads stdin JSON, validates `notification_type` field, POSTs AgentEvent to `http://127.0.0.1:2209/event`, exits 0 on any outcome
-- [ ] T008 [P] [MX] Create `post-tool-use.sh` — reads stdin, maps to AgentEvent(type=ToolUse, state='end') with tool_name, tool_input, tool_output, POSTs to WS server
-- [ ] T009 [P] [MX] Create `pre-tool-use.sh` — reads stdin, maps to AgentEvent(type=ToolUse, state='start') with tool_name, tool_input, POSTs to WS server
-- [ ] T010 [P] [MX] Create `stop.sh` — reads stdin, maps to AgentEvent(type=Timing) with duration_ms and sets session idle, POSTs to WS server
-- [ ] T011 [P] [MX] Create `message-display.sh` — reads stdin, maps to AgentEvent(type=MessageDisplay) with text and streaming flag, POSTs to WS server
+- [x] T007 [P] [MX] Create `notification.sh` — reads stdin JSON, validates `notification_type` field, POSTs AgentEvent to `http://127.0.0.1:2209/event`, exits 0 on any outcome
+- [x] T008 [P] [MX] Create `post-tool-use.sh` — reads stdin, maps to AgentEvent(type=ToolUse, state='end') with tool_name, tool_input, tool_output, POSTs to WS server
+- [x] T009 [P] [MX] Create `pre-tool-use.sh` — reads stdin, maps to AgentEvent(type=ToolUse, state='start') with tool_name, tool_input, POSTs to WS server
+- [x] T010 [P] [MX] Create `stop.sh` — reads stdin, maps to AgentEvent(type=Timing) with duration_ms and sets session idle, POSTs to WS server
+- [x] T011 [P] [MX] Create `message-display.sh` — reads stdin, maps to AgentEvent(type=MessageDisplay) with text and streaming flag, POSTs to WS server
 
 ### UI Components (Event Consumers)
 
-- [ ] T012 [P] [MX] Implement `ui/statusline.js` — subscribes to WS server, renders fixed bottom bar (1-2 lines) using ANSI escape codes showing current agent state (status, tool, thought, model, event count). Updates in-place without scroll flicker.
-- [ ] T013 [P] [MX] Implement `ui/log.js` — subscribes to WS server, maintains in-memory rolling buffer (max 2000 entries), renders scrollable event history above statusline with GFM formatting, supports PgUp/PgDn/arrow keys for navigation
-- [ ] T014 [MX] Implement `ui/ui.js` — orchestrator: starts WS client to `ws://127.0.0.1:2209`, instantiates statusline + log, handles terminal resize events, manages graceful shutdown (restore cursor on Ctrl+C)
+- [x] T012 [P] [MX] Implement `ui/statusline.js` — subscribes to WS server, renders fixed bottom bar (1-2 lines) using ANSI escape codes showing current agent state (status, tool, thought, model, event count). Updates in-place without scroll flicker.
+- [x] T013 [P] [MX] Implement `ui/log.js` — subscribes to WS server, maintains in-memory rolling buffer (max 2000 entries), renders scrollable event history above statusline with GFM formatting, supports PgUp/PgDn/arrow keys for navigation
+- [x] T014 [MX] Implement `ui/ui.js` — orchestrator: starts WS client to `ws://127.0.0.1:2209`, instantiates statusline + log, handles terminal resize events, manages graceful shutdown (restore cursor on Ctrl+C)
 
 ### Integration
 
-- [ ] T015 [MX] Create Claude Code hook registration in `.claude/hooks/settings.json` (or `~/.claude/settings.json`) — references all 5 hook scripts with `async: true` and `timeout: 1000`
-- [ ] T016 [MX] Wire event dispatch in `server/index.js` — POST `/event` handler validates JSON against hook-contracts.md schemas, pushes to session-state, broadcasts to all WS clients, maintains log buffer
+- [x] T015 [MX] Create Claude Code hook registration in `hook-scripts/register-hooks.json` — references all 5 hook scripts with `async: true` and `timeout: 1000`
+- [x] T016 [MX] Wire event dispatch in `server/index.js` — POST `/event` handler validates JSON against hook-contracts.md schemas, pushes to session-state, broadcasts to all WS clients, maintains log buffer
 
 **Checkpoint**: Run scenario from quickstart.md — Claude Code executes command, statusline updates in real-time, log shows full history scrollable with keyboard.
 
@@ -80,10 +80,10 @@
 
 ### Implementation for User Story 2
 
-- [ ] T017 [P] [US2] Implement filter middleware in `server/filters.js` — loads config, exposes `isEnabled(eventType)` check, re-reads config on file change
-- [ ] T018 [US2] Integrate filters into event broadcast path in `server/index.js` — before broadcasting to WS clients, filter each event against active filter config
-- [ ] T019 [US2] Add filter toggle UI to `ui/statusline.js` — bottom-bar indicator showing active/inactive event types (e.g., `[T:✓][S:✓][K:✗]` for tools, thinking, tokens)
-- [ ] T020 [US2] Implement config save endpoint in `server/index.js` — `POST /config` accepts filter map, persists to `~/.vibechat.json`, broadcasts config change to WS clients
+- [x] T017 [P] [US2] Implement filter middleware in `server/filters.js` — loads config, exposes `isEnabled(eventType)` check, re-reads config on file change
+- [x] T018 [US2] Integrate filters into event broadcast path in `server/index.js` — before broadcasting to WS clients, filter each event against active filter config
+- [x] T019 [US2] Add filter toggle UI to `ui/statusline.js` — bottom-bar indicator showing active/inactive event types (e.g., `[T:✓][S:✓][K:✗]` for tools, thinking, tokens)
+- [x] T020 [US2] Implement config save endpoint in `server/index.js` — `POST /config` accepts filter map, persists to `~/.vibechat.json`, broadcasts config change to WS clients
 
 **Checkpoint**: Toggle filters, verify only selected event types appear in both statusline and log. Config survives server restart.
 
@@ -93,13 +93,13 @@
 
 **Purpose**: Edge case handling, tests, documentation
 
-- [ ] T021 [P] Write self-check test for server in `tests/test-server.js` — starts server, sends test events via curl, verifies WS broadcast received, verifies log buffer content, verifies disconnect → reconnect cycle
-- [ ] T022 [P] Write self-check test for hook scripts in `tests/test-hooks.js` — pipes sample JSON into each hook script, verifies non-zero exit is never returned, verifies correct POST URL and body format
-- [ ] T023 [P] Write self-check test for statusline in `tests/test-ui.js` — sends sequence of AgentEvents, verifies statusline contains expected state transitions
-- [ ] T024 Handle edge cases in `server/index.js`: port conflict (try next port or error with clear message), malformed event JSON (log warning, discard), WS disconnect (cleanup client)
-- [ ] T025 Handle edge cases in `ui/ui.js`: terminal resize redraw, WS reconnect with exponential backoff (max 3s), graceful Ctrl+C cleanup
-- [ ] T026 Run `quickstart.md` validation scenarios and fix any failures
-- [ ] T027 Update `README.md` with VibeChat usage instructions (prerequisites, install, run, config)
+- [x] T021 [P] Write self-check test for server in `tests/test-server.js` — starts server, sends test events via curl, verifies WS broadcast received, verifies log buffer content, verifies disconnect → reconnect cycle
+- [x] T022 [P] Write self-check test for hook scripts in `tests/test-hooks.js` — pipes sample JSON into each hook script, verifies non-zero exit is never returned, verifies correct POST URL and body format
+- [x] T023 [P] Write self-check test for statusline in `tests/test-ui.js` — sends sequence of AgentEvents, verifies statusline contains expected state transitions
+- [x] T024 Handle edge cases in `server/index.js`: port conflict (try next port or error with clear message), malformed event JSON (log warning, discard), WS disconnect (cleanup client)
+- [x] T025 Handle edge cases in `ui/ui.js`: terminal resize redraw, WS reconnect with exponential backoff (max 3s), graceful Ctrl+C cleanup
+- [x] T026 Run `quickstart.md` validation scenarios and fix any failures
+- [x] T027 Update `README.md` with VibeChat usage instructions (prerequisites, install, run, config)
 
 ---
 

@@ -1,0 +1,27 @@
+{
+  "name": "claude-code-custom",
+  "version": "1.0.0",
+  "description": "> **Enhanced Claude Code environment для начинающих вайбкодеров.** > Прозрачность, автоматизация и удобство для тех, кто пишет код с ИИ.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "ui": "node ui/ui.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivan-meer/claude-code-custom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ivan-meer/claude-code-custom/issues"
+  },
+  "homepage": "https://github.com/ivan-meer/claude-code-custom#readme",
+  "dependencies": {
+    "ansi-escapes": "^7.3.0",
+    "ws": "^8.21.0"
+  }
+}

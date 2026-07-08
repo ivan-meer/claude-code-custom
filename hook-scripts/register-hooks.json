@@ -1,0 +1,64 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash d:/.AGENTOS/claude-code-custom/hook-scripts/notification.sh",
+            "timeout": 1000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash d:/.AGENTOS/claude-code-custom/hook-scripts/post-tool-use.sh",
+            "timeout": 1000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash d:/.AGENTOS/claude-code-custom/hook-scripts/pre-tool-use.sh",
+            "timeout": 1000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash d:/.AGENTOS/claude-code-custom/hook-scripts/stop.sh",
+            "timeout": 1000,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "MessageDisplay": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash d:/.AGENTOS/claude-code-custom/hook-scripts/message-display.sh",
+            "timeout": 1000,
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
